@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitácora Tecnología Medina</title>
+    <link rel="icon" type="imagen/png" href="Recursos/IMG/LOGO_CAPOUILLIEZ - Isotipos Blancos-07.png">
+    <style>
+        html,body{
+            height: 100%;
+            margin: 0;
+            font-family: Arial,sans-serif;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+        header{
+            padding: 20px;
+            background-color: rgb(213, 186, 228);
+        }
+        main{
+            flex: 1;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        footer{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+            border-top: 5px solid rgb(214, 119, 214);
+            background-color: rgb(224, 197, 229);
+        }
+        @media(max-width:600px){
+            footer{
+                flex-direction: column;
+                gap: 15px;
+                padding: 20px;
+            }
+        }
+        h1 {
+            color: #fff; /* Color de la letra blanco para que resalte el neón */
+    text-shadow: 
+        0 0 5px #bc13fe,   /* Brillo suave cercano */
+        0 0 10px #bc13fe,  /* Resplandor medio */
+        0 0 20px #bc13fe,  /* Brillo extendido */
+        0 0 40px #bc13fe;  /* Efecto de luz ambiental */
+        }
+        footer img {
+            /* Tiempo que tarda en crecer (0.3 segundos) */
+            transition: transform 0.3s ease; 
+            cursor: pointer; /* Cambia el cursor a una mano para indicar que es interactivo */
+        }
+
+        footer img:hover {
+            /* Multiplica el tamaño original. 1.2 es un 20% más grande */
+            transform: scale(1.2); 
+        }
+        .semana {
+            background-color: #ffffff; /* Fondo blanco para la tarjeta */
+            border-radius: 15px;       /* Bordes redondeados */
+            padding: 25px;             /* Espacio interno */
+            margin-bottom: 30px;       /* Espacio entre tarjetas */
+            box-shadow: 0 4px 15px rgb(206, 148, 215); /* Sombra suave */
+            border-left: 8px solid #bc13fe; /* Una línea lateral con tu color neón */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: left;          /* Alineación del texto para lectura */
+        }
+
+        .semana:hover {
+            transform: translateY(-5px); /* Se eleva un poco al pasar el mouse */
+            box-shadow: 0 8px 25px rgba(188, 19, 254, 0.2); /* La sombra brilla un poco */
+        }
+
+        .semana h2 {
+            margin-top: 0;
+            color: #bc13fe;            /* Título con tu color temático */
+            font-size: 1.5rem;
+        }
+
+        .semana p {
+            color: #555;               /* Texto en gris oscuro para mejor lectura */
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Encabezado de mi página WEB</h1>
+    </header>
+    </main>
+    <h4>Contenido de mi página WEB</h4>
+        <main>
+        <article class="semana">
+            <h2>Semana 1: Introducción al Proyecto</h2>
+            <p>En esta semana aprendimos las bases de la estructura HTML y cómo conectar hojas de estilo CSS para personalizar nuestra bitácora.</p>
+            <a href="recursos/Introducción Arduino (1).pdf" class="boton-pdf" target="_blank">
+        <span style="margin-right: 8px;">📄</span> Ver Documento PDF
+    </a>
+
+        </article>
+
+    
+        <div class="semana">
+    <h2>Semana 2: Efectos y Animaciones</h2>
+    <p>Añadimos efectos de sombra neón y transiciones a las imágenes del colegio.</p>
+    <video width="100%" controls style="border-radius: 8px; margin-top: 15px;">
+        <source src="Recursos/VIDEO ALANIS FINAL.mp4" type="video/mp4">
+        Tu navegador no soporta videos.
+    </video>
+</div>
+        </article>
+    </main>
+    <footer>
+        <span>2026 @alaanisvm</span>
+        <img src="https://www.capouilliez.edu.gt/assets/img/logo.png" alt="" width="140px" height="40px">
+    </footer>
+</body>
+</html>
