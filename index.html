@@ -15,6 +15,14 @@
             display: flex;
             flex-direction: column;
             text-align: center;
+
+            /* Capa oscura semitransparente + tu imagen */
+            background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('fondoAM.jpg'); 
+            background-size: cover;          /* Cubre toda la pantalla */
+            background-position: center;     /* Centra la imagen */
+            background-repeat: no-repeat;    /* No se repite en mosaico */
+            background-attachment: fixed;    /* Efecto fijo al hacer scroll */
+            background-color: #1a1a2e;       /* Color oscuro por si la imagen tarda en cargar */
         }
         header{
             padding: 20px;
